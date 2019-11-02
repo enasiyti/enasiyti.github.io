@@ -1,35 +1,192 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Doob</title>
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600&display=swap" rel="stylesheet">
-        <link rel="stylesheat" href="css/bootstrap.min.css">
-        <link rel="stylesheat" href="css/main.css">
-    </head>
-    <body>
-        <header id="header" class="header">
-            <div class="container">
-                
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doob</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src=’https://use.fontawesome.com/releases/v5.0.6/js/all.js'></script>
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row vertical-align">
+                <div class="col-lg-1">
+                    <img src="img/logo.png" alt="Doob" class="logo">
+                </div>
+                <div class="col-lg-8">
+                    <div class="nav">
+                    <label for="toogle">&#9776</label>
+                    <input type="checkbox" id="toogle" />
+                    <nav>
+                        <ul class="menu d-flex justify-content-center">
+                            <li class="menu__item">
+                                <a href="#">
+                                   Home.
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">
+                                    About us.
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">
+                                    Portfolio.
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">
+                                    Blog.
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">
+                                    Contact us.
+                                </a>
+                            </li>
+                        </ul>
+                    </nav> </div>
+                </div>
+                <div class="col-lg-3 ml-auto">
+                    <button type="submit" class="contact__btn">Contact Us</button>
+                </div>
+            
+
             </div>
-        </header>
 
-        <section id="portfolio" class="portfolio">
-            <div class="container">
+            <div class="row vertical-align">
+                <div class="col-lg-6">
 
+                    <div class="company">
+                        <h1 class="company__title">
+                            The Spirit Of Digital Agency
+                        </h1>
+                        
+                        <p class="company__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. 
+                        </p>
+                        <div>
+                                 <button type="submit" class="btn">More about us</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-5 ml-auto">     
+                  
+                <div id="sl" class="carousel slide" data-ride="carousel">
+
+                  <ul class="carousel-indicators">
+                    <li data-target="#sl" data-slide-to="0" class="active"></li>
+                    <li data-target="#sl" data-slide-to="1"></li>
+                    <li data-target="#sl" data-slide-to="2"></li>
+                  </ul>
+              
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/illustration-1.png" alt="1" >
+                </div>
+                <div class="carousel-item">
+                  <img src="img/illustration-2.png" alt="2" >
+                </div>
+                <div class="carousel-item">
+                  <img src="img/illustration-3.png" alt="3" >
+                </div>
+              </div>
+  
+  
+              <a class="carousel-control-prev" href="#sl" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#sl" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
             </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <div class="container">
-
             </div>
-        </section>
-
-        <footer id="footer" class="footer">
-            <div class="container">
-
             </div>
-        </footer>
-    </body>
+        </div>
+    </header>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="title">
+                        <h2>
+                            See some of our Creative work
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="block d-flex"></div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="block d-flex"></div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="block d-flex"></div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="block d-flex"></div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="block d-flex"></div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="block d-flex"></div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <section class="touch">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title">
+                        <h2>
+                            Get in Touch
+                        </h2>  
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 m-auto vertical-align">
+                    <form action="#" class="form">
+                        <input type="email" placeholder="Your email" class="form__input" required>
+                        <textarea placeholder="Message" rows="8" cols="40" name="text" class="form__input"></textarea>
+                        <button type="submit" class="btn">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="signature">
+                       Creativity above     
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>

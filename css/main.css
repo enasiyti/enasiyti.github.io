@@ -1,5 +1,215 @@
-/* specification */
-body { 
+/* Спецификация */
+
+body {
     font-family: 'Work Sans', sans-serif;
+    color: #314584;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+    
+}
+h1{
+    font-size: 75px;
+}
+
+
+h2 {
+    text-align: left;
+    font-size: 35px;
+}
+
+
+/* Первый экран */
+
+.header {
+    
+    padding-top:60px;
+    padding-bottom: 80px;
+}
+
+
+.menu__item {
+    margin: 0 35px;
+}
+
+.menu__item a {
+    font-size:18px;
+    font-weight:600;
+    color: #314584;
+
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+.company {
+    margin-top:115px;
+}
+
+.company__title {
+    margin-bottom: 15px;
+}
+
+.company__text {
+    font-size: 16px;
+    margin-top:15px;
+    width: 400px;
+}
+
+
+.carousel {
+    display: block;
+    margin: 60px auto 0;
+}
+.carousel-inner img {
+      width: 100%;
+      height: 100%;
+}
+
+/* Второй экран */
+.title {
+    padding-top: 100px;
+    padding-bottom:50px;
+    text-align: center;
+}
+
+.block {
+    margin-bottom: 25px;
+    padding: 100px;
+    background-color: #c3d0d8;
+}
+
+
+/* Третий экран */
+
+.form {
+    text-align: left;
+
+}
+
+.form__input {
+    background: #f4fafe;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+
+
+.contact__btn {
+     color: #ff3946;
+    font-size: 18px;
+    font-weight: 300;
+    border: 0;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.03), 0 10px 10px rgba(0,0,0,0.03);
+}
+
+.btn{
+    background-color: #ff3946;
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+    border-radius: 15px;
+    margin-top:15px;
+    font-size: 18px;
+}
+
+/* Футер */
+
+.footer {
+    background: #314584;
+    padding:50px 0 50px;
+    margin-top: 100px;
+}
+
+.signature {
+    color: #ff3946;
+    font-size: 25px;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+label{
+    font-size: 25px;
+    display: none;
+}
+#toogle{
+    display: none;
+}
+/* Медиа-запросы */
+
+@media screen and (max-width: 768px) {
+    .logo {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .company {
+        text-align: center;
+        margin-top:75px;
+    }
+    .company__title{
+        font-size: 55px;
+    }
+    .company__text {
+        margin: 15px auto;
+        width: auto;
+    }
+
+    .form__input {
+        margin-right:0;
+        width: 100%;
+    }
+    .contact__btn {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+
+    label{
+        display: block;
+        cursor: pointer;
+        margin: 0 auto;
+
+    }
+
+    nav{
+        width: 100%;
+        display: none;
+    }
+     .menu {
+        flex-direction: column;
+
+    }
+
+    .menu__item {
+        display: block;
+        text-align: center;
+        margin-bottom:10px;
+    }
+   
+   
+    #toogle:checked + nav{
+        display: block;
+    }
+    .carousel{
+        display: none;
+    }
+
 }
 
